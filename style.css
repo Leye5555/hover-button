@@ -1,0 +1,174 @@
+:root {
+  --first-color: rgb(0, 170, 207);
+  --main-bg-clr: rgb(23, 213, 255);
+  --second-color: rgba(30, 52, 74, 0.822);
+  --neutral-900: #fff;
+  --neutral-700: #ffffffda;
+  --btn-bg: 23, 213, 255;
+  --dark: #000;
+  --duration: 0.4s;
+}
+
+html {
+  font-size: 16px;
+}
+/*
+
+.btn {
+  overflow: hidden;
+  background-color: var(--second-color);
+  width: max-content;
+  border: none;
+  border-radius: 0.75rem;
+  position: relative;
+}
+
+.btn-content {
+  display: flex;
+  padding: 14px 20px;
+
+  gap: 20px;
+  align-items: center;
+  position: relative;
+  z-index: 20;
+}
+
+.btn-text {
+  font-size: 1.125rem;
+  line-height: 1.35;
+  color: var(--neutral-900);
+}
+
+.arrow-clip {
+  overflow: hidden;
+  width: 60px;
+  height: 28px;
+  border-radius: 6px;
+}
+.arrows {
+  display: flex;
+  transform: translateX(-60px);
+  transition: all var(--duration);
+}
+
+.arrows img {
+  padding: 4px 20px;
+  background-color: var(--first-color);
+}
+
+.btn:hover .arrows {
+  transform: translateX(0);
+  transition: all var(--duration);
+}
+
+.btn-text {
+  color: var(--neutral-900);
+  transition: all var(--duration);
+}
+
+.btn:hover .btn-text {
+  color: var(--dark);
+  transition: all var(--duration);
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(100%);
+  transition: all var(--duration);
+  border-radius: 0.75rem;
+  background-color: rgb(var(--btn-bg));
+}
+
+.btn:hover ::after {
+  transform: translateX(0);
+  transition: all var(--duration);
+} */
+
+.btn-wrap {
+  width: 100%;
+  max-width: 8.75rem;
+  min-width: max-content;
+  height: 3.5rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.btn-wrap button {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 1.125rem;
+  border: none;
+  background-color: var(--second-color);
+  overflow: hidden;
+  padding: 8px 16px;
+  position: relative;
+}
+
+.btn-wrap button > * {
+  position: relative;
+  z-index: 1;
+}
+
+.icon-wrap {
+  overflow: hidden;
+  height: max-content;
+  border-radius: 6px;
+}
+
+.btn-icons {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  flex: 1;
+  width: 48px;
+  max-width: 48px;
+  height: 28px;
+  transform: translateX(-48px);
+  transition: transform var(--duration);
+}
+
+.btn-icons > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  min-width: 48px;
+  background-color: var(--first-color);
+  height: 28px;
+}
+
+.btn-wrap:hover .btn-icons {
+  transform: translateX(0);
+  transition: transform var(--duration);
+}
+
+.btn-wrap .text {
+  color: white;
+  transition: color var(--duration);
+}
+
+.btn-wrap:hover .text {
+  color: black;
+  transition: color var(--duration);
+}
+
+.btn-wrap button::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--main-bg-clr);
+  border-radius: 12px;
+  transform: translateX(100%);
+  transition: transform var(--duration);
+}
+
+.btn-wrap:hover button::after {
+  transform: translateX(0);
+  transition: transform var(--duration);
+}
